@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMA HABATA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #dbe3ea;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .greet {
+            color: #3b6edc;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* CARD */
+        .card-custom {
+            border-radius: 14px;
+            border: none;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            background: #fff;
+        }
+
+        .card-header-custom {
+            background: #f1f1f1;
+            border-radius: 14px 14px 0 0;
+            padding: 10px 16px;
+            font-weight: 600;
+        }
+
+        /* TABLE */
+        table {
+            font-size: 13px;
+        }
+
+        table thead th {
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* STATUS BADGE */
+        .badge-status {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .tersedia {
+            background: #22c55e;
+        }
+
+        .tidak {
+            background: #ef4444;
+        }
+
+        .periksa {
+            background: #3b82f6;
+        }
+
+        /* PJ */
+        .pj span {
+            background: #e5e7eb;
+            border-radius: 6px;
+            padding: 3px 6px;
+            font-size: 11px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+    <p class="greet">Hai @username</p>
+
+    <!-- PERMINTAAN RAPAT -->
+    <div class="card card-custom">
+        <div class="card-header-custom">Permintaan Rapat</div>
+        <div class="card-body p-0">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>Nama Rapat</th>
+                        <th>Tanggal & Waktu</th>
+                        <th>Ruangan</th>
+                        <th>Fasilitas</th>
+                        <th>Penanggung Jawab</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rapat Sensusi</td>
+                        <td>13 May 2025, 08.00</td>
+                        <td>Aula</td>
+                        <td>mic, stopkontak</td>
+                        <td class="pj"><span>Hanif</span><span>Caca</span></td>
+                        <td><span class="badge-status tersedia">tersedia</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rapat Rutin</td>
+                        <td>17 May 2025, 10.00</td>
+                        <td>PST</td>
+                        <td>mic, stopkontak</td>
+                        <td class="pj"><span>Ibnu</span><span>Luna</span></td>
+                        <td><span class="badge-status tidak">tidak tersedia</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rapat kecil</td>
+                        <td>20 May 2025, 14.00</td>
+                        <td>Garda</td>
+                        <td>mic, stopkontak</td>
+                        <td class="pj"><span>Joko</span><span>Tita</span></td>
+                        <td><span class="badge-status tidak">tidak tersedia</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rapat Evaluasi</td>
+                        <td>10 May 2025, 09.00</td>
+                        <td>Aula</td>
+                        <td>mic, stopkontak</td>
+                        <td class="pj"><span>Asep</span><span>Lila</span></td>
+                        <td><span class="badge-status periksa">Periksa</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- HISTORY -->
+    <div class="card card-custom">
+        <div class="card-header-custom">History Permintaan Rapat</div>
+        <div class="card-body p-0">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>Nama Rapat</th>
+                        <th>Tanggal & Waktu</th>
+                        <th>Ruangan</th>
+                        <th>Fasilitas</th>
+                        <th>Penanggung Jawab</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rapat Sensusi</td>
+                        <td>13 May 2025, 08.00</td>
+                        <td>Aula</td>
+                        <td>mic, stopkontak</td>
+                        <td class="pj"><span>Hanif</span><span>Caca</span></td>
+                        <td><span class="badge-status tersedia">tersedia</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rapat Rutin</td>
+                        <td>17 May 2025, 10.00</td>
+                        <td>PST</td>
+                        <td>mic, stopkontak</td>
+                        <td class="pj"><span>Ibnu</span><span>Luna</span></td>
+                        <td><span class="badge-status tidak">tidak tersedia</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
