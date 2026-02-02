@@ -12,6 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
+        html, body {
+  overflow-x: hidden;
+}
+
         body {
             background: #dbe3ea;
             font-family: 'Segoe UI', sans-serif;
@@ -160,6 +164,16 @@
             width: 100%;
             margin: 10px 0 25px;
         }
+        .kanankan{
+          margin-right:20px ;
+          margin-left:20px;
+        }
+        .kanankan1{
+            margin-left:20px;
+        }
+        .kirikan{
+            margin-right:20px
+        }
     </style>
 </head>
 
@@ -179,7 +193,7 @@
             <div class="row g-4 mb-4 justify-content-center">
 
     <!-- CARD 1 -->
-    <div class="col-md-4">
+    <div class="col-sm-5">
         <div class="card card-stat p-3 h-100">
             <div class="d-flex justify-content-between align-items-start">
                 <div>
@@ -194,22 +208,9 @@
         </div>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="col-md-4">
-        <div class="card card-stat p-3 h-100">
-            <div class="d-flex justify-content-between align-items-start">
-                <div>
-                    <i class="bi bi-briefcase stat-icon"></i>
-                    <h6 class="stat-title">Fasilitas yang Tersedia</h6>
-                    <h3 class="stat-number">4</h3>
-                </div>
-                <i class="bi bi-bar-chart-fill stat-chart"></i>
-            </div>
-        </div>
-    </div>
 
     <!-- CARD 3 -->
-    <div class="col-md-4">
+    <div class="col-md-5">
         <div class="card card-stat h-100">
             <div class="card-inner p-3">
                 <div class="d-flex justify-content-between align-items-start">
@@ -286,7 +287,7 @@
 
 
             <!-- STATUS RUANGAN -->
-            <div class="card mb-4">
+            <div class="card mb-4 kanankan">
                 <div class="card-header">Status Ruangan</div>
                 <div class="card-body p-0">
                     <table class="table table-striped mb-0">
@@ -330,6 +331,7 @@
                     </table>
                 </div>
             </div>
+
             <!-- MODAL EDIT -->
             <div class="modal fade" id="editModal" tabindex="-1">
                 <div class="modal-dialog">
@@ -358,7 +360,7 @@
 
                 <!-- DATA RUANGAN -->
                 <div class="col-md-6">
-                    <div class="card h-100">
+                    <div class="card h-100 kanankan1">
                         <div class="card-header">Data Ruangan</div>
                         <table class="table mb-0 table-sm">
                             <tr>
@@ -382,7 +384,7 @@
 
                 <!-- DATA FASILITAS -->
                 <div class="col-md-6">
-                    <div class="card h-100">
+                    <div class="card h-100 kirikan">
                         <div class="card-header">Data Fasilitas</div>
                         <table class="table mb-0 table-sm">
                             <tr>
